@@ -3,7 +3,7 @@ Django for Everybody (DJ4E)
 This repository is an updated version of https://github.com/ab007shetty/dj4e with all the errors resolved.
 It includes all the necessary files for the Django for Everybody course autograded tests.
 
-I highly recommend you all to follow this video [text](https://youtu.be/kQcEPy-xzGI?si=JRTNqv7Yf1S5FU4V)
+I highly recommend you all to follow this video https://youtu.be/kQcEPy-xzGI?si=JRTNqv7Yf1S5FU4V
 
 
 Running Locally
