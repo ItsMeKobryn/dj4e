@@ -1,45 +1,59 @@
-DJ4E Coursera
+Django for Everybody (DJ4E)
 =============
+This repository is an updated version of https://github.com/ab007shetty/dj4e with all the errors resolved.
+It includes all the necessary files for the Django for Everybody course autograded tests.
 
-This is a Complete files of the Course django for everybody.
+I highly recommend you all to follow this video [text](https://youtu.be/kQcEPy-xzGI?si=JRTNqv7Yf1S5FU4V)
+
 
 Running Locally
 ---------------
 
-If you have Django installed on your local computer you can test any of the sample
-applications by going into the folder and starting the server:
+To test the sample applications on your local machine, ensure you have Django installed. Follow these steps:
+
+1.Open your terminal or command prompt.
+2.Navigate to the project directory
 
     cd dj4e
+3.Start the Django development server
+
     python3 manage.py runserver
 
 And visit `http://localhost:8000`.
 
-Running on PythonAnywhere
+Deploying on PythonAnywhere
 -------------------------
+First Download this repository on your local machine , this should be dj4e-master.zip
+and upload it in the files tab of pythonanywhere and unzip it with the help of console .
 
-Once you have checked out the code under `django_projects`, and
-ran the migrations and load scripts,
-go under the Web tab, update the config files to point to your new application:
+After you've checked out the code in the dj4-master directory and executed the necessary migrations 
+and data loading scripts, you'll need to configure your application on PythonAnywhere:
 
-    Source code:                /home/--your-account--/django_projects/dj4e
-    Working Directory:          /home/--your-account--/django_projects/dj4e
+1.Go to the Web tab on your PythonAnywhere dashboard.
 
-Use this as your `WGSI configuration file`:
+2.Update the following configuration settings:
+
+    Source code:                 /home/your-account/dj4e-master/mysite
+    Working Directory:           /home/your-account/dj4-master/mysite
+
+3.Use the following code for your `WSGI configuration file`:
 
     import os
     import sys
 
-    path = os.path.expanduser('~/django_projects/dj4e')
+    path = os.path.expanduser('~/dj4e-master')
     if path not in sys.path:
         sys.path.insert(0, path)
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'dj4e.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
     from django.core.wsgi import get_wsgi_application
     from django.contrib.staticfiles.handlers import StaticFilesHandler
     application = StaticFilesHandler(get_wsgi_application())
 
-You can edit these files and settings in the Web tab to switch between
-your various projects on PythonAnywhere.  Make sure to reload under the Web tab after
-every file or configuration change.
+Important Notes
+---------------
+After making any changes to files or configurations, remember to reload the 
+application in the Web tab for the changes to take effect.
+
 
 
 
