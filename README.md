@@ -50,10 +50,11 @@ and data loading scripts, you'll need to configure your application on PythonAny
     from django.contrib.staticfiles.handlers import StaticFilesHandler
     application = StaticFilesHandler(get_wsgi_application())
 
-Important Notes
+Special Thanks
 ---------------
-After making any changes to files or configurations, remember to reload the 
-application in the Web tab for the changes to take effect.
+Anirudha B Shetty https://github.com/ab007shetty
+
+Ashish Kumarwww.youtube.com/@AshishKumar-dd1pi
 
 
 
