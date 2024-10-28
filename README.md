@@ -54,7 +54,7 @@ Special Thanks
 ---------------
 Anirudha B Shetty https://github.com/ab007shetty
 
-Ashish Kumar wwww.youtube.com/@AshishKumar-dd1pi
+Ashish Kumar https://www.youtube.com/@AshishKumar-dd1pi
 
 
 
