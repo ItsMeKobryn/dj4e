@@ -12,7 +12,8 @@ Running Locally
 To test the sample applications on your local machine, ensure you have Django installed. Follow these steps:
 
 1.Open your terminal or command prompt.
-2.Navigate to the project directory
+
+2.Navigate to the project directory .
 
     cd dj4e
 3.Start the Django development server
